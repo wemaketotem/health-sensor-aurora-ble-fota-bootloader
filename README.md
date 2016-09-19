@@ -1,8 +1,4 @@
 # health-sensor-aurora-ble-fota-bootloader
-Bootloader for flashing the Totem Health Patch over air. 
-Use a programming rig in combination with nRFgo Stuio and a J-Link to flash the BLE bootlaoder on the device.
-To be used when 'your firmware' is not flashed correctly using the Nordic Master Controll app. 
+Bootloader for flashing new firmware on the Totem Health Patch over air. 
 
-Sometimes, when flashing firmware, the device stays in application mode and does not go back to bootloader mode. 
-When this happens, the device is no longer visible (as a bluetooth device). 
-A reboot using the steps mentioned above are necessary to solve this problem
+When the health patch is preflashed with firmware v2, the user no longer needs a J-link and a programmer to flash the device. However, sometimes, flashing firmware over the air goes wrong which results in the device being in a wrong 'state'. when this happens, the device is not visible anymore within the bluetooth application. To solve this problem, a reset needs to be done suing the J-link and programmer. 
